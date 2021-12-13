@@ -20,6 +20,9 @@
 .item:nth-child(2){
     flex-grow: 2;
 }
+.item:nth-child(3){
+    flex-grow: 3;
+}
 /* .item:nth-child(2), */
 /* .item:nth-child(10){/*Esto hace un elemento de los item mas grande*/
     /* font-size: 250%;
