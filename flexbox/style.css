@@ -1,9 +1,9 @@
 .container{
     background-color: #333;
-    height: 20vh;
+    height: 250px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -13,13 +13,15 @@
     border: medium solid #999;
     background-color: #666;
 
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-}
-.item:nth-child(2){
+    /* flex-grow: 0;
     flex-shrink: 3;
+    flex-basis: auto; */
+
+    flex: 0 3 150px; /*Es un shorthand de las propiedades flex-grow flex-shrink y flex-basis en este mismo orden*/
 }
+/* .item:nth-child(2){
+    flex-basis: 200px;
+} */
 /* .item:nth-child(3){
     flex-grow: 3;
 } */
