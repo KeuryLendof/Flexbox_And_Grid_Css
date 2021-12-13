@@ -1,6 +1,6 @@
 .container{
     background-color: #333;
-    display: inline-flex;
+    display: flex;
 }
 .item{
     background-color: #666;
