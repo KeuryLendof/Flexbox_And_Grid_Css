@@ -1,3 +1,7 @@
+*{
+    margin: 0%;
+}
+
 .containers{
     background-color: #333;
     height: 250px;
@@ -65,5 +69,25 @@
     .flex-item{
         flex: 0 0 16.6666666666%;
     }
+}
+
+/*Ejemplos practicos*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main{
+    flex-grow: 1;
+}
+
+.titulares{
+    padding: 1rem;
+    background-color: #222;
+    color: #EEE;
+
 }
 
