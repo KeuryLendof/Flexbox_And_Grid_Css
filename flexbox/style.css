@@ -1,4 +1,4 @@
-.container{
+.containers{
     background-color: #333;
     height: 250px;
 
@@ -33,4 +33,37 @@
 /* .item:nth-child(10){/*Esto hace un elemento de los item mas grande*/
     /* font-size: 250%;
 } */
+
+
+/*Tabla*/
+
+.contenido{
+    margin: auto;
+    max-width: 1280px;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-item{
+    border: thin solid #CCC;
+    flex: 0 0 100%
+}
+@media(min-width:576px){
+    .flex-item{
+        flex: 0 0 33.33333333%;
+    }
+}
+@media(min-width:992px){
+    .flex-item{
+        flex: 0 0 25%;
+    }
+}
+@media(min-width:1200px){
+    .flex-item{
+        flex: 0 0 16.6666666666%;
+    }
+}
 
