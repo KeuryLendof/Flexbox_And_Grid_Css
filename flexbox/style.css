@@ -81,6 +81,11 @@ body{
 
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 main{
     flex-grow: 1;
 }
@@ -120,6 +125,16 @@ main{
     font-size: 5vw;
 }
 
+.flex-responsive{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-responsive-item{
+    border: thin solid #f60;
+    flex: 1 1 180px;
+}
+
 @media screen and (min-width: 1024px){
     .header{
         display: flex;
@@ -132,6 +147,22 @@ main{
 
     .menu li{
         padding: .5rem;
+    }
+
+    .flex-contenido{
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-element{
+        flex: 0 0 50%;
+    }
+    .flex-order-1{
+        order: 1;
+    }
+
+    .flex-row-reverse{
+        flex-direction: row-reverse;
     }
 }
 
