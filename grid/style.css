@@ -58,3 +58,12 @@ img {
     background-color: #666;
     border: medium solid #999;
 }
+
+.grid-explicit{
+    display: grid;
+    /* -ms-grid-rows: 2rem 20vh 30%; */
+    /* -ms-grid-columns: 50% 100px 1fr; */
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px 0px;
+}
