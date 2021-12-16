@@ -65,5 +65,16 @@ img {
     /* -ms-grid-columns: 50% 100px 1fr; */
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(4,auto);
-    gap: 10px 0px;
+    /* gap: 10px 0px; */
+}
+
+.item:nth-child(10){
+    color: red;
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; */
+    grid-row: 2/3;
+    grid-column: 3/5;
+
 }
