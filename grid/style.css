@@ -69,12 +69,32 @@ img {
 }
 
 .item:nth-child(10){
-    color: red;
+    color: rgb(55, 219, 22);
+    background-color: rosybrown;
     /* grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3; */
-    grid-row: 2/3;
-    grid-column: 3/5;
 
+    /* grid-row: 2/3;
+    grid-column: 3/5; */
+
+    grid-area: 2/3/3/5; /*Posicionar elemento donde uno quiera*/
+
+}
+.item:nth-child(11){
+    color: saddlebrown;
+    background-color: wheat;
+
+    grid-row: span 3; /*Abarcar de la posicion en que se encuentra tres filas*/
+    grid-column: span 2; /*Abarcar de la posicion en que se encuentra dos columnas*/
+
+}
+
+.item:nth-child(15){
+    color: yellow;
+    background-color: peachpuff;
+
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
 }
