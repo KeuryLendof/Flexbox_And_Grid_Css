@@ -47,7 +47,7 @@ img {
 .container {
     margin: 0 auto;
     width: 80%;
-    height: 80vh;
+    height: 90vh;
     background-color: #222;
     border: medium solid #000;
 }
@@ -102,7 +102,7 @@ img {
 
 .grid-line-names{
     /*grid-area no funciona con grid-;ine-name*/
-    
+
     display: grid;
 
     /* grid-template-columns: repeat(3,1fr);
@@ -116,4 +116,31 @@ img {
     color: plum;
     grid-row: linea-r3/linea-r4;
     grid-column: linea-c1/linea-c4;
+}
+
+
+
+.grid-areas{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 100px 1fr 60px;
+
+    grid-template-areas: 
+     "header header"
+     "content sidebar"
+     "footer footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+.content{
+    grid-area: content;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
 }
