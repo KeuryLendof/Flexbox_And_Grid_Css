@@ -170,3 +170,15 @@ img {
     /* grid-auto-rows: 70px; */
     grid-auto-columns: 70px;
 }
+.grid-flow-dense{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    grid-auto-flow: column dense; /*Para rellenar los espacios que queden vacios*/
+
+}
+.grid-flow-dense .item:nth-child(11){
+    color: lawngreen;
+    grid-row: span 3;
+    grid-column: span 3;
+}
