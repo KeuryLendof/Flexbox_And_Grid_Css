@@ -157,3 +157,16 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 150px);
 }
+
+
+
+/*Dar tamano especifico a los elementos que no estan dentro de las columnas y filas*/
+.grid-flow{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 150px);
+
+    grid-auto-flow: column;
+    /* grid-auto-rows: 70px; */
+    grid-auto-columns: 70px;
+}
