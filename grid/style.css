@@ -145,3 +145,15 @@ img {
 .footer{
     grid-area: footer;
 }
+
+
+
+
+
+
+.grid-implicit{
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
