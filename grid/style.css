@@ -292,3 +292,18 @@ img {
     grid-template-columns: repeat(4, 10% 20% 30% 40%);
     grid-template-columns: repeat(1, 10% 20% 30% 40%);
 }
+
+
+
+
+.grid-dynamics{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+
+    /*auto-fill rellena la grid con tracks generados dinamicamente*/
+    grid-template-columns: repeat(auto-fill, 100px);
+    /*auto-fit ajusta con los tracks exixtentes*/
+    grid-template-columns: repeat(auto-fit, 100px);
+
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
