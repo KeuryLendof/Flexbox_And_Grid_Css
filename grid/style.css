@@ -218,6 +218,9 @@ img {
     grid-row: 2/4;
 }
 
+
+
+
 .grid-order{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -231,4 +234,22 @@ img {
 }
 .grid-order .item:nth-child(5){
     order: -1;
+}
+
+
+
+
+
+.grid-align{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+
+    /* justify-items: start;
+    justify-items: end; */
+    justify-items: center;
+
+    /* align-items: start;
+    align-items: end; */
+    align-items: center;
 }
