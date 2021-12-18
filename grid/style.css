@@ -281,6 +281,14 @@ img {
     grid-template-columns: repeat(4, minmax(max-content,200px));
 
     grid-template-columns: repeat(4, minmax(min-content,max-content));
-    
 
+}
+
+
+
+
+.grid-repeat{
+    display: grid;
+    grid-template-columns: repeat(4, 10% 20% 30% 40%);
+    grid-template-columns: repeat(1, 10% 20% 30% 40%);
 }
