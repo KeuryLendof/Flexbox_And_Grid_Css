@@ -58,6 +58,11 @@ img {
     background-color: #666;
     border: medium solid #999;
 }
+.sub-item{
+    padding: 1rem;
+    background-color: #DDD;
+    border: medium solid #ccc;
+}
 
 .grid-explicit{
     display: grid;
@@ -318,4 +323,11 @@ img {
 
     /*extra*/
     gap: 1vh;
+}
+
+
+
+.grid-nested{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
