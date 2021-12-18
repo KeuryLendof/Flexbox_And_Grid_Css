@@ -274,4 +274,13 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, minmax(100px,200px));
 
+    grid-template-columns: repeat(4, minmax(min-content,200px));/*Contenido del elemento*/
+    grid-template-columns: repeat(4, minmax(100px,min-content));/*Contenido del elemento*/
+
+    grid-template-columns: repeat(4, minmax(100px,max-content));
+    grid-template-columns: repeat(4, minmax(max-content,200px));
+
+    grid-template-columns: repeat(4, minmax(min-content,max-content));
+    
+
 }
